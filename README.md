@@ -1,2 +1,2 @@
 # roll-dice
-A simple roll dice using Object.prototype and 🔥
+A roll dice using Object.prototype and 🔥
