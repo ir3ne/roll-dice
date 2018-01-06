@@ -1,0 +1,66 @@
+/* reset */
+button {
+	border: 0;
+	&:focus {
+		outline: 0;
+	}
+}
+
+/* roll dice */
+body {
+	background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+	font-family: "Source Code Pro";
+}
+
+.roll-dice {
+	width: 200px;
+	height: 360px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	
+	#roll-dice-placeholder {
+		width: 200px;
+		height: 200px;
+		margin: 0 auto;
+		margin-top: 0;
+		z-index: 99;
+		border: 2px solid white;
+		border-radius: 12px;
+		color: white;
+		font-size: 90px;
+		line-height: 92px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#roll-dice-button {
+		position: absolute;
+		bottom: 40px;
+		left: 0;
+		font-size: 40px;
+		line-height: 42px;
+		padding: 10px 20px;
+		width: 100%;
+		text-align: center;
+		background: #000;
+		color: white;
+		cursor: pointer;
+		border-radius: 12px;
+		
+		&:hover {
+			background: #202020;
+		}
+	}
+	
+	.roll-dice-info {
+		color: white;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		text-align: center;
+		width: 100%;
+	}
+}
